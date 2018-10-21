@@ -11,10 +11,8 @@ GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(22, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
-i = 0
-j = 0
 rand = AddChar()
-while len(temp.get16()) <= 16:
+while len(rand.get16()) <= 16:
     bit0 = GPIO.input(26) * 1
     bit1 = GPIO.input(19) * 2
     bit2 = GPIO.input(13) * 4
@@ -26,7 +24,7 @@ while len(temp.get16()) <= 16:
     byte = bit0 + bit1 + bit2 + bit3 + bit4 + bit5 + bit6 + bit7
     rand.addchar(byte)
 
-while len(temp.get32()) <= 32:
+while len(rand.get32()) <= 32:
     bit0 = GPIO.input(26) * 1
     bit1 = GPIO.input(19) * 2
     bit2 = GPIO.input(13) * 4
