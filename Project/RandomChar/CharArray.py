@@ -21,17 +21,3 @@ class AddChar:
 
     def get32(self):
         return self.str32
-
-
-# For testing purposes only.
-i = 0
-j = 0
-temp = AddChar()
-while len(temp.get16()) <= 16:
-    temp.addchar(random.randint(0, 255))
-
-while len(temp.get32()) <= 32:
-    temp.addchar(random.randint(0, 255))
-
-print(temp.get16())
-print(temp.get32())
