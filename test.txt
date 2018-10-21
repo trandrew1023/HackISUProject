@@ -1,0 +1,8 @@
+
+
+There is a nice explanation there, as a comic strip. It is probably as clear and simple as these things can ever get.
+
+If you are more mathematically inclined, you can read the FIPS-197 standard which is quite readable for a standard; but it helps a lot to have some non-negligible background in algebra (especially finite fields of characteristic 2, and vector space).
+
+AES-128, AES-192 and AES-256 are similar algorithms, but with distinct numbers of rounds. AES is described as a sequence of elementary operations called rounds; rounds are (mostly) identical except that they use distinct subkeys (extracted from the main encryption key), and they are successive (each round takes as input the output of the previous round). AES-128 has 10 rounds, AES-192 has 12 rounds, and AES-256 has 14 rounds. The computation of subkeys, called the key schedule or the key expansion, also differs a bit between the three variants: with a larger key, the key schedule must work over, indeed, a larger key, and must also output more subkeys since there are more rounds to feed.
+

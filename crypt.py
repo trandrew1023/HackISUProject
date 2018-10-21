@@ -26,26 +26,26 @@ def decrypt_file(file_name, key):
     dec = decrypt(ciphertext, key)
     return dec
 
-with open("secret.txt", 'r') as fo:
-    message = fo.read()
-    print("Original message length: " + str(len(message)))
-    message = pad.pad_data(message)
-    print("Padded message length: " + str(len(message)))
+#with open("secret.txt", 'r') as fo:
+#    message = fo.read()
+#    print("Original message length: " + str(len(message)))
+#    message = pad.pad_data(message)
+#    print("Padded message length: " + str(len(message)))
 
-with open("key.txt", 'r') as fo:
-    key = fo.read()
-    print("Original key length: " + str(len(key)))
-    key = pad.pad_key(key)
-    print("Padded key length: " + str(len(key)))
+#with open("key.txt", 'r') as fo:
+#    key = fo.read()
+#    print("Original key length: " + str(len(key)))
+#    key = pad.pad_key(key)
+#    print("Padded key length: " + str(len(key)))
 
-with open("IV.txt", 'r') as fo:
-    iv = fo.read()
-    print("Original IV length: " + str(len(iv)))
-    iv = pad.pad_iv(iv)
-    print("Padded IV length: " + str(len(iv)))
+#with open("IV.txt", 'r') as fo:
+#    iv = fo.read()
+#    print("Original IV length: " + str(len(iv)))
+#    iv = pad.pad_iv(iv)
+#    print("Padded IV length: " + str(len(iv)))
 
-crypt = encrypt(message, key, iv)
-print(crypt)
+#crypt = encrypt(message, key, iv)
+#print(crypt)
 
-dec = decrypt(crypt, key)
-print(dec)
+#dec = decrypt(crypt, key)
+#print(dec)

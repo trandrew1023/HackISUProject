@@ -13,7 +13,7 @@ def pad_data(data):
     #return data + b"\0" * (AES.block_size - len(data) % AES.block_size) 
     mod = len(data) % 16
     for x in range(0, (16 - mod)):
-        data += '\0'
+        data += "\0"
     return data
 
 

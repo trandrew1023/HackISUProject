@@ -1,39 +1,32 @@
-from Crypto.Cipher import AES
+import os
+import crypt
 import pad
+PATH_A = "./driveA"
+PATH_B = "./driveB"
 
-crypt_suite = AES.new('This is a keeeeeey1232eewwssdazZ', AES.MODE_CBC, 'This is an IV124')
-cipher_text = crypt_suite.encrypt("SECRET MESSAGE DO NOT READ PADDD")
-print(cipher_text)
+FILE_PICS = "./cats"
+KEY_PICS = "./dogs"
 
-decryption_suite = AES.new('This is a keeeeeey1232eewwssdazZ', AES.MODE_CBC, 'This is an IV124')
-plain_text = decryption_suite.decrypt(cipher_text)
+counter = 0
 
-print(plain_text)
+key = "This is a placeholder"
+iv = "also a placehold"
 
-with open("secret.txt", 'r') as file, open("key.txt", 'r') as key, open("IV.txt", 'r') as IV:
-    data = file.read()
-    length = len(data)
-    print("Data length " + str(length))
-    mod = length % 16
-    for x in range(0, mod):
-        data += ' '
-    length = len(data)
-    print("Data length " + str(length))
-    print(data)
+key = pad.pad_key(key)
 
-    keyStr = key.read()
-    IVstr = IV.read()
-    
-    padder = pad.pad_key(keyStr)
-    data = pad.pad_data(data)
-    lock = AES.new(padder, AES.MODE_CBC, IVstr)
-    cipher = lock.encrypt(data)
+tex = crypt.encrypt("Hello world", key, iv)
+print(tex)
 
-    print(cipher)
+tex = crypt.decrypt(tex, key)
+print(tex)
 
-    unlock = AES.new(padder, AES.MODE_CBC, IVstr)
-    plain = unlock.decrypt(cipher)
-    
-    print(plain)
-
-
+fo = open("./driveA/secret1.txt", "r")
+tex = fo.read()
+print(tex)
+fo.close()    
+tex = crypt.encrypt(tex, key, iv)
+print(tex)
+fo = open("./driveA/secret1.enc", "w")
+fo.write(str(tex))
+fo.close()
+os.system("steghide embed -ef ./driveA/secret1.enc -cf ./dogs/dog01.jpg -p dog01 -sf ./driveA/dog01.jpg")
