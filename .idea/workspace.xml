@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a539c2d-111c-48e4-9d05-e37e79194ca1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Project/RandomChar/CharArray.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RandomChar/CharArray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/RandomChar/GPIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RandomChar/GPIO.py" afterDir="false" />
-    </list>
+    <list default="true" id="8a539c2d-111c-48e4-9d05-e37e79194ca1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/RandomChar/GPIO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1540087865935" expanded="true" signature="661:721" ph="..." />
@@ -94,7 +91,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-3" />
     <option name="y" value="-33" />
     <option name="width" value="1890" />
@@ -250,8 +247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/RandomChar/GPIO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1540087865935" expanded="true" signature="661:721" ph="..." />
