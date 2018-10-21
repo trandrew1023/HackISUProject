@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>About</title>
 </head>
 <body>
 <div class="header">
@@ -10,7 +11,7 @@
     </h1>
 </div>
 <input onclick="location.href='Main.html'" type="button" id="home" name="home" value="Home"/>
-<input onclick="location.href='About.html'" type="button" id="about" name="about" value="About"/>
+<input onclick="location.href='About.html'" type="button" id="about" name="about" value="About" style="background-color: beige"/>
 <input onclick="location.href='Goals.html'" type="button" id="goals" name="goals" value="Goals"/>
 <input onclick="location.href='Process.html'" type="button" id="process" name="process" value="Process"/>
 <input onclick="location.href='FinalProduct.html'" type="button" id="product" name="product" value="Final Product"/>
@@ -20,32 +21,39 @@
 <h2>
     Team Members
 </h2>
+<p>
+    Click on our names to learn more!
+</p>
 <button class="accordion">Jack Potter</button>
 <div class="panel">
     <p>
         Junior <br/>
-        Computer Engineering
+        Computer Engineering <br/>
+        jpotter@iastate.edu
     </p>
 </div>
 <button class="accordion">Ethan Young</button>
 <div class="panel">
     <p>
         Junior <br/>
-        Computer Engineering
+        Computer Engineering <br/>
+        eyoung20@iastate.edu
     </p>
 </div>
 <button class="accordion">Camden Thomas</button>
 <div class="panel">
     <p>
         Junior <br/>
-        Software Engineering
+        Software Engineering <br/>
+        camdent@iastate.edu
     </p>
 </div>
 <button class="accordion">Andrew Tran</button>
 <div class="panel">
     <p>
         Junior <br/>
-        Software Engineering
+        Software Engineering <br/>
+        atran@iastate.edu
     </p>
 </div>
 
@@ -56,11 +64,12 @@
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        border: none;
+        border: 2px solid black;
         text-align: left;
         outline: none;
         font-size: 15px;
         transition: 0.4s;
+        margin: 1px;
     }
     .panel {
         padding: 0 18px;
